@@ -1,0 +1,84 @@
+* {
+	box-sizing: border-box;
+}
+
+.clock {
+	display: flex;
+	position: relative;
+	align-items: center;
+	width: 1920px;
+	height: 1080px;
+	padding: 16px;
+	background: url(https://image.freepik.com/free-psd/abstract-background-design_1297-73.jpg);
+	background-size: cover;
+}
+
+section {
+	position: absolute;
+    top:  50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.digital-clock, .date {
+	padding: 200px;
+	text-align: center;
+	font-size: 45px;
+	font-weight: bold;
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	text-shadow: 3px 3px #dc9aa3;
+}
+
+.analog-clock {
+  border-radius: 100%;
+	border: 4px solid #dcad9a;
+  background: rgb(255, 255, 255) url(https://cssanimation.rocks/images/posts/clocks/ios_clock.svg) no-repeat center;
+  background-size: 90%;
+  width: 220px;  
+	height: 220px;
+	margin: 0 auto;
+  position: relative;
+}
+
+.minutes-container, .hours-container, .seconds-container {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}	
+
+.hours {
+	background: #9ac4dc;
+	height: 20%;
+	left: 48.75%;
+	position: absolute;
+	top: 30%;
+	transform-origin: 50% 100%;
+	width: 2.5%;
+	box-shadow: 2px 2px 2px #888888;
+}	
+
+.minutes {
+	background: #9ac4dc;
+	height: 38%;
+	left: 49%;
+	position: absolute;
+	top: 12%;
+	transform-origin: 50% 100%;
+	width: 2%;
+	box-shadow: 2px 2px 2px #888888;
+}
+
+.seconds {
+	background: #9ac4dc;
+	height: 45%;
+	left: 49.5%;
+	position: absolute;
+	top: 14%;
+	transform-origin: 50% 80%;
+	width: 1%;
+	z-index: 8;
+	box-shadow: 2px 2px 3px #888888;
+}
